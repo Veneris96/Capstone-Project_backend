@@ -1,0 +1,41 @@
+GET http://localhost:7070/users/64afe3a81d16ebfb95fc5b0a
+
+######
+
+POST http://localhost:7070/users/new HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Matteo",
+    "surname": "Devicienti",
+    "email": "matteo.dev@outlook.com",
+    "password": "987456321",
+    "address": "Via Casterna 44",
+    "city": "Fumane",
+    "province": "VR",
+    "cap": "37357",
+    "role": "admin"
+}
+
+######
+
+PATCH http://localhost:7070/users/64afe3a81d16ebfb95fc5b0a HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Giovanni",
+    "surname": "Mangini",
+    "email": "jomangini@gmail.com",
+    "password": "Sempiternal96",
+    "address": "Via Amaranto 16",
+    "city": "Verona",
+    "province": "VR",
+    "cap": "37020",
+    "role": "user"
+}
+
+######
+
+DELETE http://localhost:7070/users/64afe3a81d16ebfb95fc5b0a HTTP/1.1
+
+######

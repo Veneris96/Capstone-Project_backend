@@ -1,0 +1,102 @@
+GET http://localhost:7070/products/usedconsoles/console&used
+
+######
+
+GET http://localhost:7070/products
+
+######
+
+PATCH http://localhost:7070/products/64a6cc9b63cbe3ea16a36b00 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "PlayStation 5 Digital Edition",
+    "maker": "",
+    "platform": "Sony: PlayStation 5",
+    "region": "EUR",
+    "genre": "",
+    "img": "https://i.ebayimg.com/images/g/-o8AAOSwPg9kfL2t/s-l400.jpg",
+    "format": "console",
+    "condition": "used",
+    "price": "399.90",
+    "description": "PlayStation 5 Digital Edition da 825GB completa di cavi, gamepad e scatola in condizioni eccellenti."
+}
+
+
+###### giochi nuovi
+
+POST http://localhost:7070/products/new HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Hogwarts Legacy",
+    "maker": "",
+    "platform": "PlayStation 4",
+    "region": "EUR",
+    "genre": "Azione e avventura",
+    "img":"https://m.media-amazon.com/images/I/819H5SQaDbL.jpg",
+    "format": "game",
+    "condition": "new",
+    "price": 64.90,
+    "description": ""
+}
+
+###### giochi usati
+
+POST http://localhost:7070/products/new HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Hogwarts Legacy",
+    "maker": "",
+    "platform": "PlayStation 5",
+    "region": "EUR",
+    "genre": "Azione e avventura",
+    "img":"https://media.karousell.com/media/photos/products/2023/5/22/ps5_hogwarts_legacy_1684737343_01609f1e_progressive.jpg",
+    "format": "game",
+    "condition": "used",
+    "price": 54.90,
+    "description": "Completo, scatola, manuale e disco in condizioni eccellenti."
+}
+
+###### console nuove
+
+POST http://localhost:7070/products/new HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "PlayStation 5 Digital Edition",
+    "maker": "",
+    "platform": "Sony: PlayStation 5",
+    "region": "EUR",
+    "genre": "",
+    "img": "https://m.media-amazon.com/images/I/61LAZp8aj+L._AC_UF1000,1000_QL80_.jpg",
+    "format": "console",
+    "condition": "new",
+    "price": "449.90",
+    "description": ""
+}
+
+###### console usate
+
+POST http://localhost:7070/products/new HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "PlayStation 5 Digital Edition",
+    "maker": "",
+    "platform": "Sony: PlayStation 5",
+    "region": "EUR",
+    "genre": "",
+    "img": "https://m.media-amazon.com/images/I/61LAZp8aj+L._AC_UF1000,1000_QL80_.jpg",
+    "format": "console",
+    "condition": "used",
+    "price": "399.90",
+    "description": "PlayStation 5 Digital Edition da 825GB completa di cavi, gamepad e scatola in condizioni eccellenti."
+}
+
+######
+
+DELETE http://localhost:7070/products/64a6cc6463cbe3ea16a36afa HTTP/1.1
+
+######
